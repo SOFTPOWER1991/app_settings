@@ -4,22 +4,22 @@
 
 
     <!-- opens a subscreen of settings -->
-    <PreferenceScreen
-        android:key="button_voicemail_category_key"
-        android:title="邮件声音"
-        android:persistent="false">
-        <ListPreference
-            android:key="button_voicemail_provider_key"
-            android:title="voicemail_provider"
-            android:entries="@array/explore_title_array"
-            />
+    <!--<PreferenceScreen-->
+        <!--android:key="button_voicemail_category_key"-->
+        <!--android:title="邮件声音"-->
+        <!--android:persistent="false">-->
+        <!--<ListPreference-->
+            <!--android:key="button_voicemail_provider_key"-->
+            <!--android:title="voicemail_provider"-->
+            <!--android:entries="@array/explore_title_array"-->
+            <!--/>-->
 
-        <RingtonePreference
-            android:key="button_voicemail_ringtone_key"
-            android:title="voicemail_ringtone_title"
-            android:showDefault="false"
-            android:ringtoneType="notification"/>
-    </PreferenceScreen>
+        <!--<RingtonePreference-->
+            <!--android:key="button_voicemail_ringtone_key"-->
+            <!--android:title="voicemail_ringtone_title"-->
+            <!--android:showDefault="false"-->
+            <!--android:ringtoneType="notification"/>-->
+    <!--</PreferenceScreen>-->
 
 
 
@@ -27,16 +27,19 @@
     <PreferenceCategory android:title="功能设置" >
         <CheckBoxPreference
             android:defaultValue="true"
+            android:layout="@layout/preference"
             android:key="isnotice"
             android:summary="已开启接收通知"
             android:title="接收通知" />
         <CheckBoxPreference
             android:defaultValue="true"
+            android:layout="@layout/preference"
             android:key="voice"
             android:summary="已开启提示声音"
             android:title="提示声音" />
         <CheckBoxPreference
             android:defaultValue="true"
+            android:layout="@layout/preference"
             android:key="checkup"
             android:summary="启动程序时检查版本更新"
             android:title="启动检查更新" />
@@ -44,20 +47,24 @@
     <PreferenceCategory android:title="缓存设置" >
         <Preference
             android:key="cache"
+            android:layout="@layout/preference"
             android:summary="0KB"
             android:title="清除缓存" />
     </PreferenceCategory>
     <PreferenceCategory android:title="其他" >
         <Preference
             android:key="feedback"
+            android:layout="@layout/preference"
             android:summary="用户意见反馈"
             android:title="意见反馈" />
         <Preference
             android:key="update"
+            android:layout="@layout/preference"
             android:summary="检测是否有新版本"
             android:title="新版本检测" />
         <Preference
             android:key="about"
+            android:layout="@layout/preference"
             android:summary="关于我们、版权信息"
             android:title="关于我们" />
     </PreferenceCategory>
